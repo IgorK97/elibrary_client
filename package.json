@@ -1,0 +1,24 @@
+{
+  "name": "mytestmonorepo",
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*",
+    "web",
+    "mobile"
+  ],
+  "description": "monorepo for web and mobile react apps",
+  "scripts": {
+    "web:dev": "pnpm --filter web dev",
+    "web:build": "pnpm --filter web build",
+    "web:preview": "pnpm --filter web preview",
+    "web:lint": "pnpm --filter web lint",
+    "test": "pnpm run -r test",
+    "mobile:start": "pnpm --filter mobile start"
+  },
+  "author": "IgorK97",
+  "license": "ISC",
+  "packageManager": "pnpm@10.15.0",
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
+}
