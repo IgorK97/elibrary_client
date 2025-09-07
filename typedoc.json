@@ -1,0 +1,14 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": [
+    "packages/core/src/index.ts",
+    "packages/utils/src/index.ts",
+    "packages/ui/src/index.ts"
+  ],
+  "out": "docs",
+  "tsconfig": "tsconfig.json",
+  "includeVersion": true,
+  "skipErrorChecking": true,
+  "excludePrivate": true,
+  "excludeProtected": true
+}

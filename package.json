@@ -12,13 +12,26 @@
     "web:build": "pnpm --filter web build",
     "web:preview": "pnpm --filter web preview",
     "web:lint": "pnpm --filter web lint",
-    "test": "pnpm run -r test",
-    "mobile:start": "pnpm --filter mobile start"
+    "test:all": "pnpm run -r test",
+    "mobile:start": "pnpm --filter mobile start",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "lint:packages": "eslint packages/**/src/**/*.{ts,tsx}",
+    "lint:projects": "eslint {web,mobile}/**/src/**/*.{ts,tsx}",
+    "lint:all": "eslint {web,mobile,packages}/**/src/**/*.{ts,tsx}",
+    "docs": "typedoc"
   },
   "author": "IgorK97",
   "license": "ISC",
   "packageManager": "pnpm@10.15.0",
   "devDependencies": {
-    "prettier": "^3.6.2"
+    "@eslint/js": "^9.35.0",
+    "@typescript-eslint/eslint-plugin": "^8.42.0",
+    "@typescript-eslint/parser": "^8.42.0",
+    "eslint": "^9.35.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "prettier": "^3.6.2",
+    "typedoc": "^0.28.12"
   }
 }

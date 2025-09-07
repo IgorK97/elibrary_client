@@ -1,8 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
+// import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 // import { add } from '@mono/utils';
 // import { CheckBox } from '@mono/ui';
-import { useState } from 'react';
+// import { useState } from 'react';
 import { SafeAreaView, ScrollView, TextInput, Button } from 'react-native';
 
 const mockBooks = [
@@ -27,7 +27,7 @@ const mockBooks = [
 ];
 
 export default function App() {
-  const [isChecked, setIsChecked] = useState(false);
+  // const [isChecked, setIsChecked] = useState(false);
   return (
     <SafeAreaView style={styles.container}>
       {/* Поиск */}
