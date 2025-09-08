@@ -3,6 +3,7 @@ import './App.css';
 import { Button } from '@mono/ui';
 import { add } from '@mono/utils';
 import { CheckBox } from '@mono/ui';
+import PdfViewer from './PdfViewer';
 
 function App() {
   const [nums, setNums] = useState({
@@ -31,6 +32,7 @@ function App() {
         Add
       </Button>
       <CheckBox value={isChecked} onChange={() => setIsChecked(!isChecked)} />
+      <PdfViewer bookId={1} />
     </>
   );
 }

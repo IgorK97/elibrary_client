@@ -12,16 +12,17 @@
   "dependencies": {
     "@mono/ui": "workspace:*",
     "@mono/utils": "workspace:*",
+    "pdfjs-dist": "^5.4.149",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
-    "@vitejs/plugin-react-swc": "^4.0.0",
+    "@vitejs/plugin-react-swc": "^4.0.1",
     "globals": "^16.3.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.39.1",
-    "vite": "^7.1.2"
+    "vite": "^7.1.5"
   }
 }
